@@ -21,7 +21,7 @@ const int sizLine = sizeof(struct IMG_LINE);
 const int sizString = sizeof(struct IMG_STRING);
 
 
-void DrawBoundingBox(uint16 left, uint16 bottom, uint16 right, uint16 top, bool recFill, uint8 color)
+void DrawBoundingBox(uint16 left, uint16 bottom, uint16 right, uint16 top, BOOL recFill, uint8 color)
 {
 	uint8* pData = (uint8*) data.u8TempImage[ADDINFO];
 	int dataSiz = data.AddBufSize;

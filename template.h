@@ -82,9 +82,9 @@ struct TEMPLATE
 	/* size of additional data buffer */
 	uint32 AddBufSize;
 	/* indicates that the shutter time changed */
-	bool nExposureTimeChanged;
+	BOOL nExposureTimeChanged;
 	/* indicates that the processing should be reset */
-	bool nResetProcessing;
+	BOOL nResetProcessing;
 	/* the threshold used for processing purposes */
 	int nThreshold;
 	/*! @brief Handle to the framework instance. */
@@ -183,7 +183,7 @@ void ResetProcess();
  * @param left, bottom, right, top: coordinates; recFill: whether to fill
  * the rectangle; color: color values from enum ObjColor
  *//*********************************************************************/
-void DrawBoundingBox(uint16 left, uint16 bottom, uint16 right, uint16 top, bool recFill, uint8 color);
+void DrawBoundingBox(uint16 left, uint16 bottom, uint16 right, uint16 top, BOOL recFill, uint8 color);
 
 /*********************************************************************//*!
  * @brief draw a line in the camera image.
